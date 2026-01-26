@@ -1,0 +1,34 @@
+# Godot-specific ignores
+.godot/
+export_presets.cfg
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Imported assets (sometimes people want to include these, but for a plugin, 
+# you usually want to keep the .import files if they are needed for the plugin to work 
+# however Godot 4 sometimes generates them for local development. 
+# In a plugin, you MUST include .import files if you have textures/sounds.)
+# So I will NOT ignore *.import if they are inside addons/
+
+# Mono/C# specific
+.mono/
+*.sln
+*.csproj
+*.Glue.cs
+*.Generated.cs
+
+# User-specific
+.vscode/
+.idea/
+*.swp
+*.tmp
+*.log
+
+# Mobile
+android/
+ios/
+
+# Built-in Godot overrides
+override.cfg

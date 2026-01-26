@@ -1,0 +1,42 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[ai_assistant_hub]
+
+preferences/border_color=Color(0, 1, 1, 1)
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="GodAgent"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/GodAgent/plugin.cfg")
+
+[plugins]
+
+ai_assistant_hub/llm_api="paxsenix_api"
+ai_assistant_hub/preferences/thinking_target=0
+ai_assistant_hub/preferences/skip_greeting=false
+ai_assistant_hub/preferences/always_scroll_to_bottom=false
+ai_assistant_hub/llm_model="gpt-5-mini"
+ai_assistant_hub/preferences/border_color=Color(0, 1, 1, 1)
+ai_assistant_hub/last_chat_path="user://ai_assistant_hub/saved_chats/2026-01-26T15_25_12_Assistant_GodAgent.cfg"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
